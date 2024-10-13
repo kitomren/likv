@@ -1,6 +1,6 @@
-Spesifikasjon for neste versjoner av Likv
+Spesifikasjon av Python versjonen av Likv
 =========================================
-Kjell Inge Tomren, kjell-inge@tomren.as, september 2017
+Kjell Inge Tomren, kitomren@gmail.com, oktober 2027
 
 ## beskrivelse av likv
 - utgangspunktet er en tekstfil med poster over ulike utgifter og inntekter
@@ -10,14 +10,22 @@ Kjell Inge Tomren, kjell-inge@tomren.as, september 2017
 - ut fra postene genereres en liste med datoer og utgift/intekt
 - listen sorteres etter dato og saldo genereres for hver dato med endring
 
-## ttd
-- prøve å kompilere den gamle c-koden på Linux
-- arkivering og versjonsstyring av koden på github
-- prøve å kompilere dem gamle c-koden på OS X
-- lage en Java-versjon av det gamle systemet
-- lage en Java-versjon med moderne brukergrensesnitt
-- lage en HTML5-versjon
-- lage en App for Android
+## spec av Python-versjonen
+- bruke csv først, XML er alternativ 
+- arkitektur: datalag, forretningslogikk og presentsasjonslag
+- MVP: faste månedlige utgifter og inntekter, resultater i CSV-fil
+
+### versjon 0.1
+- datoer og faste månedlige utgifter
+
+### versjon 0.2
+- årlige, månedlige og ukentlige utgifter
+
+### versjon 0.3
+- tekst-basert input-modul, list, edit, add, delete
+
+### versjon 1.0
+- web basert input-modul
 
 ## ønsker for framtidig versjoner
 - nettsted for modellering av privatøkonomi
