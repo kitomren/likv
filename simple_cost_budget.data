@@ -1,11 +1,12 @@
 # Cost name and amount pr month for a senior couple
-"Mat og drikke"; 7530
-"Klær og sko"; 2000
-"Personlig pleie"; 1690
-"Lek og mediebruk"; 2060
-"Reise (kollektivt)"; 1794
-"Andre dagligvarer"; 470
-"Husholdningsartikler"; 630
-"Møbler"; 600
-"Mediebruk og fritid"; 2480
-"Bilkostnader (drift, vedlikehold)"; 5283
+# format: day_of_month; cost_text; cost_amount
+5; "Mat og drikke"; 7530
+4; "Klær og sko"; 2000
+5; "Personlig pleie"; 1690
+10; "Lek og mediebruk"; 2060
+11; "Reise (kollektivt)"; 1794
+12; "Andre dagligvarer"; 470
+18; "Husholdningsartikler"; 630
+19; "Møbler"; 600
+24; "Mediebruk og fritid"; 2480
+25; "Bilkostnader (drift, vedlikehold)"; 5283

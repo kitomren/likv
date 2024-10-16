@@ -1,7 +1,7 @@
 ######################################################################################
 # File: read_posts.py
 # Description: open files and read cost data from csv file
-# Version: 0.3 October 13th 2024
+# Version: 0.4 October 16th 2024
 # Author: Kjell Inge Tomren, kitomren@gmail.com
 # Project: likv with Python
 #
@@ -13,12 +13,13 @@ with open('simple_cost_budget.data') as csv_file:
     csv_reader = csv.reader(csv_file, delimiter=';')
     line_count = 0
     for row in csv_reader:
-        if line_count == 0:
-            print(f'First line, {": ".join(row)}')
+        if line_count == 0 or line_count == 1:
+            print(f'Comment line, {": ".join(row)}')
             line_count += 1
         else:
-            amount = float(row[1])
-            print(f'Cost text: {row[0]}, Amount: {amount}')
+            day = int(row[0])
+            amount = float(row[2])
+            print(f'Day of month: {day} \ttext: {row[1]}, Amount: {amount}')
             line_count += 1
 
     print(f'Processed {line_count} lines.')
