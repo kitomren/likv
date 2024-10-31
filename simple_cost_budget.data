@@ -1,12 +1,18 @@
 # Cost name and amount pr month for a senior couple
 # format: text; number; year/month/day; periode_type; periode_delta; fix; amount_in; amount_out
-"Mat og drikke"; 3;2024/10/19; m; 1; f; 0; 7530
-"Klær og sko"; 3;2024/10/19; m; 1; f; 0; 2000
-"Personlig pleie"; 3;2024/10/19; m; 1; f; 0; 1690
-"Lek og mediebruk"; 3;2024/10/19; m; 1; f; 0; 2060
+"Lønn, Kjell"; 2;2024/10/12; m; 1; f; 45000; 0
+"Lønn, Kjell"; 1;2024/12/12; m; 1; f; 60000; 0
+"Lønn, Kjell"; 5;2025/1/12; m; 1; f; 45000; 0
+"Lønn, Kjell"; 1;2025/6/12; m; 1; f; 60000; 0
+"Lønn, Kjell"; 5;2025/7/12; m; 1; f; 45000; 0
+"Mat og drikke"; 52;2024/10/19; w; 1; f; 0; 2000
+"Klær og sko"; 12;2024/10/19; m; 1; f; 0; 2000
+"Personlig pleie"; 12;2024/10/19; m; 1; f; 0; 1690
+"Lek og mediebruk"; 12;2024/10/19; m; 1; f; 0; 2060
 "Reise (kollektivt)"; 3;2024/10/19; m; 1; f; 0; 1794
 "Andre dagligvarer"; 3;2024/10/19; m; 1; f; 0; 470
 "Husholdningsartikler"; 3;2024/10/19; m; 1; f; 0; 630
 "Møbler"; 3;2024/10/19; m; 1; f; 0; 600
 "Mediebruk og fritid"; 3;2024/10/19; m; 1; f; 0; 2480
+"Strøm, havna"; 4;2025/1/20; m; 3; f; 0; 2500
 "Bilkostnader (drift, vedlikehold)"; 3;2024/10/19; m; 1; f; 0; 5283
