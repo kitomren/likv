@@ -1,15 +1,14 @@
 ######################################################################################
 # File: read_posts.py
-# Description: open file,d read cost data from csv file, generate entries and write to file
-# Version: 0.8 October 31 2024
+# Description: open files and read cost data from csv file
+# Version: 0.7777777 October 24 2024
 # Author: Kjell Inge Tomren, kitomren@gmail.com
 # Project: likv with Python
 #
 # format: text; number; year/month/day; periode_type; periode_delta; fix; amount_in; amount_out
 ######################################################################################
 import csv 
-import datetime 
-from dateutil.relativedelta import relativedelta
+from datetime import datetime
 
 with open('simple_cost_budget.data') as csv_file:
     csv_reader = csv.reader(csv_file, delimiter=';')
