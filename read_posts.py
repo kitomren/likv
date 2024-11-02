@@ -8,7 +8,7 @@
 # format: text; number; year/month/day; periode_type; periode_delta; fix; amount_in; amount_out
 ######################################################################################
 import csv 
-import datetime 
+from datetime import *
 from dateutil.relativedelta import relativedelta
 
 with open('simple_cost_budget.data') as csv_file:
@@ -29,8 +29,19 @@ with open('simple_cost_budget.data') as csv_file:
             fix = row[5]
             amount_in = float(row[6])
             amount_out = float(row[7])
-            print(f'{text} Antall: {number} Dato: {date} Periode type: {periode_type} pd: {periode_delta} Fix: {fix} Inn: {amount_in} Ut: {amount_out}')
-            line_count += 1
+
+            if ("w" in periode_type):
+
+                print(f'w {text} Antall: {number} Dato: {date} Periode type: {periode_type} pd: {periode_delta} Fix: {fix} Inn: {amount_in} Ut: {amount_out}')
+                line_count += 1
+            elif ("m" in periode_type):
+                print(f'm {text} Antall: {number} Dato: {date} Periode type: {periode_type} pd: {periode_delta} Fix: {fix} Inn: {amount_in} Ut: {amount_out}')
+                line_count += 1
+            elif ("y" in periode_type):
+                print(f'y {text} Antall: {number} Dato: {date} Periode type: {periode_type} pd: {periode_delta} Fix: {fix} Inn: {amount_in} Ut: {amount_out}')
+                line_count += 1
+            else:
+                print("Unknown type of period")
 
     print(f'Processed {line_count} lines.')
 
