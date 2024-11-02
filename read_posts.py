@@ -1,7 +1,7 @@
 ######################################################################################
 # File: read_posts.py
 # Description: open file,d read cost data from csv file, generate entries and write to file
-# Version: 0.8 October 31 2024
+# Version: 0.9 November 2 2024
 # Author: Kjell Inge Tomren, kitomren@gmail.com
 # Project: likv with Python
 #
@@ -31,8 +31,13 @@ with open('simple_cost_budget.data') as csv_file:
             amount_out = float(row[7])
 
             if ("w" in periode_type):
-
-                print(f'w {text} Antall: {number} Dato: {date} Periode type: {periode_type} pd: {periode_delta} Fix: {fix} Inn: {amount_in} Ut: {amount_out}')
+                i = 1
+                while i < number:
+                    print(time_obj,text,amount_in,amount_out)
+                    delta = relativedelta(weeks=periode_delta)
+                    time_obj = time_obj + delta
+                    i += 1
+# print(f'w {text} Antall: {number} Dato: {date} Periode type: {periode_type} pd: {periode_delta} Fix: {fix} Inn: {amount_in} Ut: {amount_out}')
                 line_count += 1
             elif ("m" in periode_type):
                 print(f'm {text} Antall: {number} Dato: {date} Periode type: {periode_type} pd: {periode_delta} Fix: {fix} Inn: {amount_in} Ut: {amount_out}')
