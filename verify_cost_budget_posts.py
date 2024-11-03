@@ -1,7 +1,7 @@
 ######################################################################################
-# File: read_posts.py
-# Description: open files and read cost data from csv file
-# Version: 0.7777777 October 24 2024
+# File: verify_cost_budget_posts.py
+    # Description: open files and read cost data from csv file and conts the number of lines
+# Version: 0.2 October 24 2024
 # Author: Kjell Inge Tomren, kitomren@gmail.com
 # Project: likv with Python
 #
