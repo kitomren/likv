@@ -58,6 +58,6 @@ with open('simple_cost_budget.data') as csv_file:
             else:
                 print("Unknown type of period")
 
-    print(f'Processed {line_count} lines.')
+#    print(f'Processed {line_count} lines.')
 
 csv_file.close()
